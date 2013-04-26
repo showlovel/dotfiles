@@ -102,6 +102,12 @@ alias rs='rails s'
 alias bunexe='bundle exec'
 alias rsp='rails s -p '
 alias rroute='rake routes'
+alias rc='rails c'
+alias rdbc='rails dbconsole'
+#@ls
+alias lsall='ls -la'
+#@wall
+alias overwall='sudo python ~/goagent-goagent-025c97b/local/proxy.py'
 #+++++++++++++++++++++++++++++++++
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
