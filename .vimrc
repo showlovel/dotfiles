@@ -48,7 +48,7 @@ Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
 Bundle 'scrooloose/nerdtree'
-
+Bundle 'Shougo/neocomplcache'
 filetype plugin indent on
 
 augroup vimrcEx
@@ -142,6 +142,9 @@ au BufRead,BufNewFile *.md setlocal spell
 
 " Automatically wrap at 80 characters for Markdown
 au BufRead,BufNewFile *.md setlocal textwidth=80
+
+"open NERDTree auto "
+autocmd VimEnter * NERDTree
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
