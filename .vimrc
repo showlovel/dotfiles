@@ -49,6 +49,10 @@ Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Shougo/neocomplcache'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'vim-scripts/genutils'
+" look up file 
+Bundle 'vim-scripts/lookupfile'
 filetype plugin indent on
 
 augroup vimrcEx
@@ -126,6 +130,11 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
+" tlist config 
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Use_Right_Window=1
+
 " vim-rspec mappings
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
@@ -143,8 +152,11 @@ au BufRead,BufNewFile *.md setlocal spell
 " Automatically wrap at 80 characters for Markdown
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
-"open NERDTree auto "
+" open NERDTree auto "
 autocmd VimEnter * NERDTree
+
+" open Tlist auto
+autocmd VimEnter * Tlist
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
