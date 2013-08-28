@@ -17,7 +17,9 @@ ZSH_THEME="muse"
   alias goprv='cd ..'
   alias prv='..'
 #--------------------------------------------------------------------
-
+  hash -d spark="/home/yang/Workspace/spark"
+  hash -d myspace="/home/yang/Workspace2/"
+#--------------------------------------------------------------------
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
